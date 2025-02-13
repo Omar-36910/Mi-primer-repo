@@ -31,10 +31,19 @@ export function leerSuperheroes(ruta) {
             hero.poder, hero.habilidadEspecial, hero.aliado, hero.enemigo)    
         );
 
-        // Ordenar por nombre de superheroe
+        // Ordenar por nombre de superheroes
         superheroes.sort((a, b) => a.nombreSuperheroe.localeCompare(
             b.nombreSuperheroe));
-        return superheroes;    
+        return superheroes;  
+         
+        // Ordenar por edad de superheroes
+        /*superheroes.sort((a, b) => b.edad - a.edad);
+        return superheroes;
+        */
+        // Ordenar por id de superheroes 
+        /*superheroes.sort((a, b) => b.id - a.id);
+        return superheroes;
+        */
 }
 
 // Nueva funcion para agregar superheroes
